@@ -8,8 +8,12 @@ import store from './store'
 import 'vuetify/dist/vuetify.min.css'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import '@mdi/font/css/materialdesignicons.css'
+import VeeValidate, { Validator } from 'vee-validate'
+import ja from 'vee-validate/dist/locale/ja'
 
 Vue.use(Vuetify)
+Validator.localize('ja', ja)
+Vue.use(VeeValidate, { locale: ja })
 
 Vue.config.productionTip = false
 

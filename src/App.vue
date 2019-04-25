@@ -23,12 +23,12 @@
             <v-list-tile-title>Dashboard</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile to="/settings">
+        <v-list-tile to="/info">
           <v-list-tile-action>
             <v-icon>settings</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>Settings</v-list-tile-title>
+            <v-list-tile-title>Info</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-list-tile to="/editForm">
@@ -49,7 +49,7 @@
       <router-view/>
     </v-content>
     <v-footer app fixed>
-      <span>&copy; 2017</span>
+      <span>&copy; 2019</span>
     </v-footer>
   </v-app>
 </template>

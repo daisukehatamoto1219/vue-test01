@@ -18,6 +18,7 @@ function route (group, path, name, view, props = false) {
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -36,6 +37,7 @@ export default new Router({
     },
     route('editForm', '/editForm', 'editForm', 'Index'),
     route('dashboard', '/dashboard', 'dashboard_index', 'Index'),
-    route('settings', '/settings', 'settings_index', 'Index')
+    route('info', '/info', 'info_index', 'Index'),
+    route('info', '/info/:id', 'info_show', 'Show', true)
   ]
 })
